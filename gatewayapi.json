@@ -9,7 +9,7 @@
     "form": {
         "sender" : "ExampleSMS", 
         "recipients.0.msisdn" : "[THE NUMBER TO SEND TEXT TO]",  
-        "message" : "{{PARTICLE_EVENT_VALUE}}",
+        "message" : "{{PARTICLE_EVENT_VALUE}}"
     },
     "mydevices": true
 }
