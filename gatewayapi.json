@@ -1,0 +1,15 @@
+{
+    "eventName": "[EVENT TO LISTEN FOR]",
+    "url": "https://gatewayapi.com/rest/mtsms,
+    "requestType": "POST",
+    "auth": {
+        "username": "[AUTH TOKEN]",
+        "password": ""
+    },
+    "form": {
+        "sender" : "ExampleSMS", 
+        "recipients.0.msisdn" : "[THE NUMBER TO SEND TEXT TO]",  
+        "message" : "{{PARTICLE_EVENT_VALUE}}",
+    },
+    "mydevices": true
+}
