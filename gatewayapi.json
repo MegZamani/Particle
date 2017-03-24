@@ -1,6 +1,6 @@
 {
     "eventName": "[EVENT TO LISTEN FOR]",
-    "url": "https://gatewayapi.com/rest/mtsms,
+    "url": "https://gatewayapi.com/rest/mtsms",
     "requestType": "POST",
     "auth": {
         "username": "[AUTH TOKEN]",
