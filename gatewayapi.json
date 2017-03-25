@@ -1,15 +1,18 @@
 {
-    "eventName": "[EVENT TO LISTEN FOR]",
+    "event": "[EVENT TO LISTEN FOR]",
     "url": "https://gatewayapi.com/rest/mtsms",
     "requestType": "POST",
+    "responseTopic": "{{PARTICLE_DEVICE_ID}}/hook-response/{{PARTICLE_EVENT_NAME}}",
     "auth": {
         "username": "[AUTH TOKEN]",
         "password": ""
     },
-    "form": {
-        "sender" : "ExampleSMS", 
-        "recipients.0.msisdn" : "[THE NUMBER TO SEND TEXT TO]",  
-        "message" : "{{PARTICLE_EVENT_VALUE}}"
+    "json": {
+        "sender" : "ExampleSMS",   
+        "message" : "{{PARTICLE_EVENT_VALUE}}",
+        "recipients": [{
+            "msisdn" : "4512345678"
+        }]
     },
     "mydevices": true
 }
