@@ -1,10 +1,10 @@
 {
-    "event": "[EVENT TO LISTEN FOR]",
+    "eventName": "pushButtonState",
     "url": "https://gatewayapi.com/rest/mtsms",
     "requestType": "POST",
     "responseTopic": "{{PARTICLE_DEVICE_ID}}/hook-response/{{PARTICLE_EVENT_NAME}}",
     "auth": {
-        "username": "[AUTH TOKEN]",
+        "username": "TOKEN",
         "password": ""
     },
     "json": {
@@ -14,5 +14,7 @@
             "msisdn" : "4512345678"
         }]
     },
-    "mydevices": true
+     "mydevices": true
+     "noDefaults": true,
+
 }
