@@ -14,7 +14,7 @@
             "msisdn" : "4512345678"
         }]
     },
-     "mydevices": true
-     "noDefaults": true,
+     "mydevices": true,
+     "noDefaults": true
 
 }
